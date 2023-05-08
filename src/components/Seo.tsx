@@ -15,7 +15,7 @@ const Seo = ({ title }: ISeo) => {
       }
     }
   `)
-  console.log()
+
   return (
     <title>
       {title} | {data.site?.siteMetadata?.title}
