@@ -12,7 +12,7 @@
 
 <br />
 
-## :pushpin: 사용한 프레임워크
+## 🛠️ 사용한 프레임워크
 
 <img src="https://img.shields.io/badge/Gatsby-663399?style=flat-round&logo=gatsby&logoColor=white"/>
 
