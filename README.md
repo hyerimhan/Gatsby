@@ -8,7 +8,7 @@
 
 ## :pencil2: 학습 목적
 
-- Gatsby 실습하기.
+- Gatsby를 활용하여 실습하기.
 
 <br />
 
