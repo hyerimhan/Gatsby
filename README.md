@@ -1,49 +1,50 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# [Gatsby (Demo)]()
 
-## 🚀 Quick start
+<!-- :point_up_2: 제목을 클릭하면 배포된 사이트를 확인하실 수 있습니다. -->
 
-1.  **Create a Gatsby site.**
+배포 전 입니다.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+<br />
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+## :pencil2: 학습 목적
 
-2.  **Start developing.**
+- Gatsby 실습하기.
 
-    Navigate into your new site’s directory and start it up.
+<br />
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## :pushpin: 사용한 프레임워크
 
-3.  **Open the code and start customizing!**
+<img src="https://img.shields.io/badge/Gatsby-663399?style=flat-round&logo=gatsby&logoColor=white"/>
 
-    Your site is now running at http://localhost:8000!
+<br />
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+## :book: 학습 내용
 
-4.  **Learn more**
+### Gatsby란?
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- 리액트에 새로운 규칙을 추가하는 리액트 기반의 프레임워크.(라이브러리X)
 
-## 🚀 Quick start (Netlify)
+### 프로젝트 생성
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+#### 1. gatsby 전역 설치
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+> ❗node.js가 최신으로 설치되어 있어야 한다.
+
+```
+npm i -g gatsby-cli
+```
+
+#### 2. 프로젝트를 생성할 폴더로 이동 후, gatsby 실행
+
+> ❗해당 프로젝트를 포함한 상위 폴더명은 전부 영문이어야 한다.
+
+```
+gatsby new
+```
+
+#### 3. 프로젝트 폴더로 이동 후, 프로젝트 실행
+
+```
+cd <프로젝트 폴더명>
+npm run develop
+```
