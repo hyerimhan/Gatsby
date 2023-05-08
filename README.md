@@ -86,3 +86,8 @@ npm run develop
       </tr>
     </tbody>
   </table>
+
+### 🔆 GraphQL
+
+- 쿼리 언어(Query Language)중 하나 (무언가를 요청하는 것)
+- DB에서 무엇인가를 꺼내오는 언어
