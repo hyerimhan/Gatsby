@@ -91,3 +91,17 @@ npm run develop
 
 - 쿼리 언어(Query Language)중 하나 (무언가를 요청하는 것)
 - DB에서 무엇인가를 꺼내오는 언어
+- `useStaticQuery`를 사용한다.
+
+```
+  // ex)
+  const data = useStaticQuery<Queries.SeoDataQuery>(graphql`
+    query SeoData {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+```
