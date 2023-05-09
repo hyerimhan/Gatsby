@@ -95,6 +95,7 @@ npm run develop
 
 ```
   // ex 01) ./src/components/Seo.tsx
+
   const data = useStaticQuery<Queries.SeoDataQuery>(graphql`
     query SeoData {
       site {
@@ -105,7 +106,9 @@ npm run develop
     }
   `)
 
+
   // ex 02) ./src/pages/blog.tsx
+
   export const query = graphql`
   query BlogPosts {
     allMdx {
