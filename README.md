@@ -94,7 +94,8 @@ npm run develop
 - 프로젝트 실행 후, [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql)에서 사용할 수 있습니다.
 
 ```
-  // ex 01. )
+  // ex 01) ./src/components/Seo.tsx
+
   const data = useStaticQuery<Queries.SeoDataQuery>(graphql`
     query SeoData {
       site {
@@ -105,7 +106,9 @@ npm run develop
     }
   `)
 
-  // ex 02. )
+
+  // ex 02) ./src/pages/blog.tsx
+
   export const query = graphql`
   query BlogPosts {
     allMdx {
