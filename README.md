@@ -80,7 +80,7 @@ npm run develop
         <td>비교적 긺</td>
       </tr>
       <tr>
-        <td>ex)</td>
+        <td>ex</td>
         <td>Gatsby(GraphQL)</td>
         <td>fetch, axios, 리액트 쿼리</td>
       </tr>
