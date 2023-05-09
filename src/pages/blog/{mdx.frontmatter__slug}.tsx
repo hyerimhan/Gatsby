@@ -11,7 +11,7 @@ const BlogPost = ({ data, children }: IBlogPost) => {
   console.log(data)
 
   return (
-    <Layout title=''>
+    <Layout>
       <div>{children}</div>
     </Layout>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 
 interface ILayout {
   children: any
-  title: string
+  title?: string
 }
 
 const Layout = ({ children, title }: ILayout) => {
