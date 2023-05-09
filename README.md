@@ -157,16 +157,40 @@ plugins: [
 // ./blog-posts/Hello.mdx
 
 ---
-title: Hello
+title: Hello everyone
 category: personal
 date: '2022-10-29'
 author: hyerim
+slug: hello-everyone
 ---
 
-## Hello-everyone!
+# Hello everyone!
 
 Welcome to my blog post. I'm very happy to have you all here with me on this special ocasion.
 
 I want to write something a little bit longer.
 
+
+```
+
+- "{mdx.변수명}.tsx"로 템플릿으로 사용할 수 있습니다.
+
+```
+// ex) {mdx.frontmatter__slug}.tsx
+
+export const query = graphql`
+  query PostDetail($frontmatter__slug: String) {
+    mdx(frontmatter: { slug: { eq: $frontmatter__slug } }) {
+      body
+      frontmatter {
+        author
+        category
+        date
+        slug
+        title
+      }
+    }
+  }
+`
+// 'frontmatter__slug'는 react-router의 '/:slug'와 비슷한 역할을 합니다.
 ```
