@@ -89,7 +89,29 @@ npm run develop
 
 ### 🔆 GraphQL
 
-> 💡[Gatsby 플러그인](https://www.gatsbyjs.com/plugins)에서 "source-filesystem"을 설치하면 GraphQL에서 더 많은 데이터를 볼 수 있습니다.
+- 쿼리 언어(Query Language)중 하나 (무언가를 요청하는 것)
+- DB에서 무엇인가를 꺼내오는 언어
+- 프로젝트 실행 후, [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql)에서 사용할 수 있습니다.
+- `useStaticQuery`를 사용한다.
+
+```
+  // ex)
+  const data = useStaticQuery<Queries.SeoDataQuery>(graphql`
+    query SeoData {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)0
+```
+
+### 🔆 [Gatsby 플러그인](https://www.gatsbyjs.com/plugins)
+
+#### source-filesystem
+
+- GraphQL에서 더 많은 데이터를 볼 수 있습니다.
 
 ```
 npm install gatsby-source-filesystem
@@ -112,22 +134,41 @@ plugins: [
 
 ```
 
-- 쿼리 언어(Query Language)중 하나 (무언가를 요청하는 것)
-- DB에서 무엇인가를 꺼내오는 언어
-- 프로젝트 실행 후, [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql)에서 사용할 수 있습니다.
-- `useStaticQuery`를 사용한다.
+#### MDX
+
+- 마크다운 + ReactJS
+- ".mdx" 마크다운 파일에 데이터를 생성할 수 있습니다.
 
 ```
-  // ex)
-  const data = useStaticQuery<Queries.SeoDataQuery>(graphql`
-    query SeoData {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+npm install gatsby-plugin-mdx gatsby-source-filesystem @mdx-js/react
 ```
 
--
+```
+// gatsby-config.ts 'plugins'에 아래 내용을 추가합니다.
+
+plugins: [
+  `gatsby-plugin-mdx`
+  {
+    ...
+  }
+],
+
+```
+
+```
+// ./blog-posts/Hello.mdx
+
+---
+title: Hello
+category: personal
+date: '2022-10-29'
+author: hyerim
+---
+
+## Hello-everyone!
+
+Welcome to my blog post. I'm very happy to have you all here with me on this special ocasion.
+
+I want to write something a little bit longer.
+
+```
