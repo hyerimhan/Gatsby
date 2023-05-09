@@ -60,32 +60,11 @@ npm run develop
 ### 🔆 Data Fetching
 
 - html 사전 생성으로 로딩 시간이 짧아 유저는 접속 즉시 html을 볼 수 있습니다.
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th>Gatsby</th>
-        <th>ReactJS</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>데이터</td>
-        <td>html 생성 도중</td>
-        <td>html 생성 후</td>
-      </tr>
-      <tr>
-        <td>로딩</td>
-        <td>짧음</td>
-        <td>비교적 긺</td>
-      </tr>
-      <tr>
-        <td>ex</td>
-        <td>Gatsby(GraphQL)</td>
-        <td>fetch, axios, 리액트 쿼리</td>
-      </tr>
-    </tbody>
-  </table>
+  | | Gatsby | ReactJS |
+  | :----: | :-------------: | :-----------------------: |
+  | 데이터 | html 생성 도중 | html 생성 후 |
+  | 로딩 | 짧음 | 비교적 긺 |
+  | ex | Gatsby(GraphQL) | fetch, axios, 리액트 쿼리 |
 
 ### 🔆 GraphQL
 
