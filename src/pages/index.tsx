@@ -5,7 +5,7 @@ import Seo from '../components/Seo'
 const IndexPage = () => {
   return (
     <Layout title='Welcome to DevStickers 🖐🏻'>
-      <div></div>
+      <div />
     </Layout>
   )
 }

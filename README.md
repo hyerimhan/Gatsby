@@ -107,7 +107,7 @@ npm run develop
 
 ### 🔆 [Gatsby 플러그인](https://www.gatsbyjs.com/plugins)
 
-#### 💡 source-filesystem
+#### 🔌 source-filesystem
 
 - GraphQL에서 더 많은 데이터를 볼 수 있습니다.
 
@@ -132,7 +132,7 @@ plugins: [
 
 ```
 
-#### 💡 MDX
+#### 🔌 MDX
 
 - 마크다운 + ReactJS
 - ".mdx" 마크다운 파일에 데이터를 생성할 수 있습니다.
