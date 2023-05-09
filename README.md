@@ -119,16 +119,16 @@ npm install gatsby-source-filesystem
 // gatsby-config.ts 'plugins'에 아래 내용을 추가합니다.
 
 plugins: [
-        {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        // The unique name for each instance
-        name: `pages`,
-        // Path to the directory
-        path: `${__dirname}/blog-posts`,
-      },
-    }
-  ],
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      // The unique name for each instance
+      name: `pages`,
+      // Path to the directory
+      path: `${__dirname}/blog-posts`,
+    },
+  }
+],
 
 ```
 
@@ -192,5 +192,27 @@ export const query = graphql`
     }
   }
 `
-// 'frontmatter__slug'는 react-router의 '/:slug'와 비슷한 역할을 합니다.
+// 'frontmatter__slug'는 react-router의 '/:slug'나 'useParams()'와 비슷한 역할을 합니다.
+```
+
+#### 🔌 gatsby-plugin-image
+
+- 정적 이미지와 동적 이미지를 사용할 수 있습니다.
+
+```
+npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp
+```
+
+```
+// gatsby-config.ts 'plugins'에 아래 내용을 추가합니다.
+
+plugins: [
+  `gatsby-plugin-image`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
+  {
+    ...
+  }
+],
+
 ```
