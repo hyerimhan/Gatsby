@@ -80,7 +80,7 @@ npm run develop
         <td>비교적 긺</td>
       </tr>
       <tr>
-        <td>예</td>
+        <td>ex)</td>
         <td>Gatsby(GraphQL)</td>
         <td>fetch, axios, 리액트 쿼리</td>
       </tr>
@@ -92,7 +92,6 @@ npm run develop
 - 쿼리 언어(Query Language)중 하나 (무언가를 요청하는 것)
 - DB에서 무엇인가를 꺼내오는 언어
 - 프로젝트 실행 후, [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql)에서 사용할 수 있습니다.
-- `useStaticQuery`를 사용한다.
 
 ```
   // ex)
@@ -104,12 +103,12 @@ npm run develop
         }
       }
     }
-  `)0
+  `)
 ```
 
 ### 🔆 [Gatsby 플러그인](https://www.gatsbyjs.com/plugins)
 
-#### source-filesystem
+#### 💡 source-filesystem
 
 - GraphQL에서 더 많은 데이터를 볼 수 있습니다.
 
@@ -134,7 +133,7 @@ plugins: [
 
 ```
 
-#### MDX
+#### 💡 MDX
 
 - 마크다운 + ReactJS
 - ".mdx" 마크다운 파일에 데이터를 생성할 수 있습니다.
