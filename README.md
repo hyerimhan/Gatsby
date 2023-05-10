@@ -204,7 +204,7 @@ npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gat
 ```
 
 ```
-// gatsby-config.ts 'plugins'에 아래 내용을 추가합니다.
+// ./src/pages/gatsby-config.ts 'plugins'에 아래 내용을 추가합니다.
 
 plugins: [
   `gatsby-plugin-image`,
@@ -215,4 +215,21 @@ plugins: [
   }
 ],
 
+```
+
+```
+// 정적인 이미지 사용 ./src/pages/index.tsx
+
+return <StaticImage src='이미지주소' alt='' />
+
+
+// 동적인 이미지 사용 ./src/pages/blog/{mdx.frontmatter__slug}.tsx
+
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
+const image = getImage(
+  data.mdx?.frontmatter?.headerImage?.childImageSharp?.gatsbyImageData!
+)
+
+return <GatsbyImage image={image} alt={} />
 ```
