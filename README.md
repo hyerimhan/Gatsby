@@ -107,9 +107,10 @@ npm run develop
 
 ### 🔆 [Gatsby 플러그인](https://www.gatsbyjs.com/plugins)
 
-#### 🔌 source-filesystem
-
-- GraphQL에서 더 많은 데이터를 볼 수 있습니다.
+<details>
+  <summary>🔌 source-filesystem</summary>
+  
+- GraphQL에서 더 많은 데이터를 불러올 수 있습니다.
 
 ```
 npm install gatsby-source-filesystem
@@ -132,7 +133,9 @@ plugins: [
 
 ```
 
-#### 🔌 MDX
+</details>
+<details>
+  <summary>🔌 MDX</summary>
 
 - 마크다운 + ReactJS
 - ".mdx" 마크다운 파일에 데이터를 생성할 수 있습니다.
@@ -195,7 +198,9 @@ export const query = graphql`
 // 'frontmatter__slug'는 react-router의 '/:slug'나 'useParams()'와 비슷한 역할을 합니다.
 ```
 
-#### 🔌 gatsby-plugin-image
+</details>
+<details>
+  <summary>🔌 gatsby-plugin-image</summary>
 
 - 정적 이미지와 동적 이미지를 사용할 수 있습니다.
 
@@ -233,3 +238,5 @@ const image = getImage(
 
 return <GatsbyImage image={image} alt={} />
 ```
+
+</details>
