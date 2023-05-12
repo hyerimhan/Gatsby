@@ -176,7 +176,7 @@ I want to write something a little bit longer.
 
 ```
 
-- "{mdx.변수명}.tsx"로 템플릿으로 사용할 수 있습니다.
+- "{변수명}.tsx"로 템플릿으로 사용할 수 있습니다.
 
 ```
 // ex) {mdx.frontmatter__slug}.tsx
@@ -209,7 +209,7 @@ npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gat
 ```
 
 ```
-// ./src/pages/gatsby-config.ts 'plugins'에 아래 내용을 추가합니다.
+// gatsby-config.ts 'plugins'에 아래 내용을 추가합니다.
 
 plugins: [
   `gatsby-plugin-image`,
@@ -237,6 +237,34 @@ const image = getImage(
 )
 
 return <GatsbyImage image={image} alt={} />
+```
+
+</details>
+<details>
+  <summary>🔌 gatsby-source-contentful</summary>
+
+- [contentful](https://www.contentful.com/)은 사이트의 여러 컨텐츠들을 관리할 수 있는 플랫폼입니다.
+- [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql)에서 contentful로 관리하는 컨텐츠들의 데이터를 확인할 수 있습니다.
+
+```
+npm install gatsby-source-contentful gatsby-plugin-image
+```
+
+- contentful의 `spaceId`와 `accessToken`은 [contentful](https://www.contentful.com/)의 settings -> API keys에서 확인하실 수 있습니다. (로그인 필요)
+
+```
+// gatsby-config.ts 'plugins'에 아래 내용을 추가합니다.
+
+plugins: [
+  {
+    resolve: `gatsby-source-contentful`,
+    options: {
+      spaceId: `your_space_id`,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    },
+  },
+],
+
 ```
 
 </details>
