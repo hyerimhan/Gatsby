@@ -4,8 +4,6 @@ import Seo from '../../components/Seo'
 import { PageProps, graphql, Link } from 'gatsby'
 
 const Blog = ({ data }: PageProps<Queries.BlogPostsQuery>) => {
-  console.log(data)
-
   return (
     <Layout title='Blog'>
       <section>
@@ -31,7 +29,7 @@ export default Blog
 
 export const query = graphql`
   query BlogPosts {
-    allMdx {
+    allMdx(sort: { frontmatter: { date: ASC } }) {
       nodes {
         frontmatter {
           author
@@ -41,6 +39,11 @@ export const query = graphql`
           slug
         }
         excerpt(pruneLength: 50)
+      }
+      edges {
+        node {
+          id
+        }
       }
     }
   }
