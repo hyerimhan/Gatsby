@@ -268,3 +268,19 @@ plugins: [
 ```
 
 </details>
+
+### 🔆 [pico CSS](https://picocss.com/)
+
+> CSS 라이브러리 (부트스트랩, tailwind CSS와 비슷)
+
+1. `src`폴더에 `styles.css` 파일을 생성한 후, pico CSS의 CDN을 불려옵니다.
+
+```
+@import url('https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css')
+```
+
+2. root 경로에 `gatsby-browser.ts` 파일을 생성한 후, `styles.css`의 파일을 불러옵니다.
+
+```
+import "./src/styles.css"
+```
