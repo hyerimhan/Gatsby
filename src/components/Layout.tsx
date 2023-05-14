@@ -8,7 +8,7 @@ interface ILayout {
 
 const Layout = ({ children, title }: ILayout) => {
   return (
-    <div>
+    <div className='container'>
       <nav>
         <ul>
           <li>
