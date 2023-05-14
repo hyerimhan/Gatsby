@@ -271,7 +271,7 @@ plugins: [
 
 ### 🔆 [pico CSS](https://picocss.com/)
 
-> CSS 라이브러리 (부트스트랩, tailwind CSS와 비슷)
+- CSS 라이브러리 (부트스트랩, tailwind CSS와 비슷)
 
 1. `src`폴더에 `styles.css` 파일을 생성한 후, pico CSS의 CDN을 불려옵니다.
 
