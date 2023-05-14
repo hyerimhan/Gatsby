@@ -285,6 +285,7 @@ import "./src/styles.css"
 
 ### 🔆 Deploy ([넷리파이](https://app.netlify.com/))
 
+- [contentful](https://www.contentful.com/)에서 상품을 생성, 수정, 삭제하면 넷리파이에서 자동으로 빌드되어 사이트에 반영됩니다.
+
 1. "Site settings" -> "Build & deploy" -> "Build hooks"에 사용할 "Contentful"을 저장합니다.
 2. 나타난 url을 복사한 뒤, [contentful](https://www.contentful.com/)에 접속하여 "Settings" -> "Webhooks" -> "WEBHOOK TEMPLATES" -> "Netlify" -> "Add" -> "Netlify build hook URL" 에 복사한 url을 붙여넣기하고 "Create webhook"을 클릭합니다.
-3. [contentful](https://www.contentful.com/)에서 상품을 생성, 수정, 삭제하면 넷리파이에서 자동으로 빌드되어 사이트에 반영됩니다.
