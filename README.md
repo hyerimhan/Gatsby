@@ -1,4 +1,4 @@
-# [Gatsby (Demo)](https://soft-kitten-518cf1.netlify.app/)
+# [Gatsby (Demo)](https://hyerim-dev-stickers.netlify.app/)
 
 :point_up_2: 제목을 클릭하면 배포된 사이트를 확인하실 수 있습니다.
 
